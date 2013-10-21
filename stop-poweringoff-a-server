@@ -1,0 +1,15 @@
+#!/bin/bash
+#This is a safe DO-NOT poweroff shell script.In case poweroff a server by mistake.
+
+#Usage:alias the command poweroff to this file.
+
+#about git:This file is too simple to use git.I only use git to push it to gitlab.ustc.edu.cn or other sites for backup.
+
+SERVER_NAME=$(hostname)
+
+echo ""
+echo -e "\e[0;36mWarning:\e[1;31mYOU ARE POWER OFF A SERVER!"
+echo ""
+echo -e "\e[0;32mYou are on the server \e[0;36m${SERVER_NAME},\e[1;31mDO NOT attemp to poweroff!Abort.\e[0m"
+echo ""
+echo -e "      ------\e[2mpoweroff is aliased to me._If you really want to poweroff,use \poweroff instead.\e[0m"
